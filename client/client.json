@@ -1,0 +1,8 @@
+{
+	"myIP" : "10.0.0.1",
+	"serverIP" : "192.168.43.182",
+	"sendPort" : 4444,
+	"enc_key" : "012345dgda012345dgda012345dgda01",
+	"machine_id" : "machine1",
+	"kerb_key" : "password1"
+}
