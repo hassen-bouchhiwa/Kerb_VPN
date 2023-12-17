@@ -30,20 +30,22 @@ def secureDecode(data):
     else:
         return "No intergrety verified for this packet"
 
-with open('ppp.json', 'r') as f:
-    data = json.load(f)
-myIP = data['myIP']
-serverIP = data['serverIP']
-sendPort = data['sendPort']
-enc_key = data['enc_key']
-kerb_key = data['kerb_key']
-machine_id = data['machine_id']
+def parse_json_file():
+    with open('ppp.json', 'r') as f:
+        data = json.load(f)
+    myIP = data['myIP']
+    serverIP = data['serverIP']
+    sendPort = data['sendPort']
+    enc_key = data['enc_key']
+    kerb_key = data['kerb_key']
+    machine_id = data['machine_id']
 
-tun = pytun.TunTapDevice(name='tun0', flags=pytun.IFF_TUN | pytun.IFF_NO_PI)
-tun.addr = myIP
-tun.netmask = '255.255.255.0'
-tun.mtu = 1500
-tun.up()
+def create_tun():
+    tun = pytun.TunTapDevice(name='tun0', flags=pytun.IFF_TUN | pytun.IFF_NO_PI)
+    tun.addr = myIP
+    tun.netmask = '255.255.255.0'
+    tun.mtu = 1500
+    tun.up()
 
 def getTGS():
     service_name = 'vpn@kdc.insat.tn'
@@ -121,6 +123,8 @@ def listener():
             print(e)
 
 if __name__ == "__main__":
+    parse_json_file()
+    create_tun()
     TGS = getTGS()
     client_socket = socketInit(TGS)
 
