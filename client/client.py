@@ -31,7 +31,7 @@ def secureDecode(data):
         return "No intergrety verified for this packet"
 
 def parse_json_file():
-    with open('ppp.json', 'r') as f:
+    with open('client.json', 'r') as f:
         data = json.load(f)
     myIP = data['myIP']
     serverIP = data['serverIP']
