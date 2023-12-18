@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Brief summary of the project, highlighting the main objectives, methods, and findings.
+The project revolves around the development of a Python-based VPN solution that prioritizes secure communication between clients and a central server. The primary objectives include the establishment of secure tunnels using TUN interfaces, encryption and decryption of data packets through advanced cryptographic techniques, and the implementation of a robust authentication system using Kerberos. 
 
 ## 1. Introduction
 
@@ -12,7 +12,7 @@ Virtual Private Networks (VPNs) are a crucial technology in today's digital land
 
 ### 1.2 Kerberos
 
-![Kerberos Authentication Process](Aspose.Words.5f731ce9-8479-44ff-8ad3-2a1d5dd0f333.001.png)
+[Imgur](https://i.imgur.com/ql5Oa45.png)
 
 The image depicts the Kerberos authentication process, a network authentication protocol designed to provide strong authentication for client/server applications using secret-key cryptography.
 
