@@ -12,7 +12,7 @@ Virtual Private Networks (VPNs) are a crucial technology in today's digital land
 
 ### 1.2 Kerberos
 
-![Imgur](https://i.imgur.com/ql5Oa45.png)
+![Imgur](https://i.imgur.com/0jaIesI.jpg)
 
 The image depicts the Kerberos authentication process, a network authentication protocol designed to provide strong authentication for client/server applications using secret-key cryptography.
 
@@ -27,7 +27,7 @@ The image depicts the Kerberos authentication process, a network authentication 
 
 ### 2.1 Overview of Tun/Tap Architecture (Client)
 
-![Imgur](https://i.imgur.com/0YrUxrr.jpg)
+![Imgur](https://i.imgur.com/78Lys0I.jpg)
 
 The TUN/TAP architecture allows for the creation of virtual network interfaces that operate at different layers of the OSI model. The client.py script plays a pivotal role in preparing the packets for secure VPN transit, ensuring they are encrypted and encapsulated before they are sent through the user's actual network interfaces to the VPN server.
 
@@ -37,7 +37,7 @@ The TUN/TAP architecture allows for the creation of virtual network interfaces t
 
 ### 2.2 Server Functioning
 
-![Imgur](https://i.imgur.com/fX1IMlc.jpg)
+![Imgur](https://i.imgur.com/bHOxHwF.jpg)
 
 **Socket Connections:**
 Each client establishes a socket connection with the VPN server, maintaining a separate socket connection for simultaneous data exchange.
@@ -55,7 +55,7 @@ The VPN server uses a database to store and manage IP-to-socket mappings, encryp
 
 #### 2.3.1 Connection (Socket) Creation
 
-![Imgur](https://i.imgur.com/1gcnyi4.png)
+![Imgur](https://i.imgur.com/Rxt7TYt.jpg)
 
 **Kerberos Initialization (kinit):**
 The client initiates the process by sending a kinit request along with its identifier (id) and the Key Distribution Center (KDC) hostname within the realm (domain) to the KDC.
@@ -80,7 +80,7 @@ The server sends a response back to the client, confirming the mutual authentica
 
 #### 2.3.2 Packet Exchange Messages
 
-![Imgur](https://i.imgur.com/FaWtHN8.png)
+![Imgur](https://i.imgur.com/DeSDKVI.jpg)
 
 **Authentication and Socket Connection Establishment:**
 The client sends an initial authentication message to the server, containing the client's identifier (Id) and an encrypted Ticket Granting Service (TGSenc).
@@ -147,7 +147,7 @@ The main block initializes a TCP/IP server socket and binds it to a specific IP 
 
 **client.json:**
 
-![Imgur](https://i.imgur.com/VuxsXZA.png)
+![Imgur](https://i.imgur.com/ly2qhXY.jpg)
 
 **Usage:**
 
