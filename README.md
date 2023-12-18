@@ -12,7 +12,7 @@ Virtual Private Networks (VPNs) are a crucial technology in today's digital land
 
 ### 1.2 Kerberos
 
-[Imgur](https://i.imgur.com/ql5Oa45.png)
+![Imgur](https://i.imgur.com/ql5Oa45.png)
 
 The image depicts the Kerberos authentication process, a network authentication protocol designed to provide strong authentication for client/server applications using secret-key cryptography.
 
